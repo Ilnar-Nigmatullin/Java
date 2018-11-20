@@ -1,0 +1,32 @@
+import java.util.*;
+import java.lang.*;
+
+public class First {
+
+public static void main(String args[]) {
+    
+    Student nameStudent = new Student();
+    nameStudent.setFullName("Albert", "Revenkov", "Ivanovich");
+    String fullName = nameStudent.getFullName();
+    
+    System.out.println("Полное имя: " + fullName);
+}
+}
+
+class Student {
+    
+    String name;
+    String surname;
+    String patronomyc;
+
+    String getFullName() {
+        return name + " " + surname + " " + patronomyc;
+    }
+    
+    void setFullName(String n, String s, String p) {
+        name = n;
+        surname = s;
+        patronomyc = p;
+    }
+
+}
